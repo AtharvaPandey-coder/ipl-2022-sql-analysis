@@ -33,6 +33,7 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 | 7 | How many matches were won by runs vs wickets? | Balanced season: 37 wins by runs and 37 by wickets |
 | 8 | What percentage of matches were won by the toss winner? | Toss winners won 36 of 74 matches (48.65%), so winning the toss gave no real edge in 2022. |
 | 9 | After winning the toss, do teams bat or field, and which choice won more often? | Teams chose to field first in 59 of 74 matches (80%). Toss winners won 49.15% of the time after fielding (29 of 59) and 46.67% after batting (7 of 15), so neither choice showed a clear edge. |
+| 10 | At which venues did chasing teams win more often than teams batting first? | Only two venues favoured chasing teams. At Wankhede Stadium they won 13 of 21 matches (62%), while Narendra Modi Stadium showed 2 of 2 but on too small a sample to read much into. |
 ## SQL concepts practiced
 `GROUP BY`, `COUNT`, `SUM`, `COUNT(DISTINCT)`, `CASE WHEN`, `ORDER BY`, `LIMIT`,percentage calculation.
 Coming next: JOINs, CTEs and window functions.

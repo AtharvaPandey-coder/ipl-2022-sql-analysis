@@ -29,7 +29,7 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 | 3 | Which team won the most matches? | Gujarat Titans won the most matches (12), ahead of Rajasthan Royals (10). Lucknow Super Giants and Royal Challengers Bangalore tied on 9. |
 | 4 | Who won the most Player of the Match awards? | Kuldeep Yadav won the most awards (4), followed by JC Buttler (3). Several players tied on 2 awards, and only 5 rows are shown.
 | 5 | Which 10 batters scored the most runs? | JC Buttler scored the most runs (863 in 17 matches), 247 more than second-placed KL Rahul (616 in 14 matches). |
-| 6 | Which 10 bowlers took the most wickets? | (add insight) |
+| 6 | Which 10 bowlers took the most wickets? |  YS Chahal took the most wickets (27), followed by PWH de Silva (26), K Rabada (23), Umran Malik (22) and Kuldeep Yadav (21). Run-outs and retirements are not credited to the bowler. |
 | 7 | How many matches were won by runs vs wickets? | Balanced season: 37 wins by runs and 37 by wickets |
 | 8 | What percentage of matches were won by the toss winner? | Toss winners won 36 of 74 matches (48.65%), so winning the toss gave no real edge in 2022. |
 | 9 | After winning the toss, do teams bat or field, and which choice won more often? | Teams chose to field first in 59 of 74 matches (80%). Toss winners won 49.15% of the time after fielding (29 of 59) and 46.67% after batting (7 of 15), so neither choice showed a clear edge. |

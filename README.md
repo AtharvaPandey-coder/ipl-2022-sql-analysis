@@ -28,7 +28,7 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 | 2 | Which 5 venues hosted the most matches? | Four venues hosted 70 of 74 matches: Wankhede Stadium (21), Dr DY Patil Sports Academy (20), Brabourne Stadium (16) and the Maharashtra Cricket Association Stadium, Pune (13). Eden Gardens and Narendra Modi Stadium hosted 2 each. |
 | 3 | Which team won the most matches? | Gujarat Titans won the most matches (12), ahead of Rajasthan Royals (10). Lucknow Super Giants and Royal Challengers Bangalore tied on 9. |
 | 4 | Who won the most Player of the Match awards? | Kuldeep Yadav won the most awards (4), followed by JC Buttler (3). Several players tied on 2 awards, and only 5 rows are shown.
-| 5 | Which 10 batters scored the most runs? | (add insight) |
+| 5 | Which 10 batters scored the most runs? | JC Buttler scored the most runs (863 in 17 matches), 247 more than second-placed KL Rahul (616 in 14 matches). |
 | 6 | Which 10 bowlers took the most wickets? | (add insight) |
 | 7 | How many matches were won by runs vs wickets? | Balanced season: 37 wins by runs and 37 by wickets |
 | 8 | What percentage of matches were won by the toss winner? | Toss winners won 36 of 74 matches (48.65%), so winning the toss gave no real edge in 2022. |

@@ -24,9 +24,9 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 
 | # | Question | Insight |
 |---|----------|---------|
-| 1 | How many matches were played in each city? | (add insight) |
-| 2 | Which 5 venues hosted the most matches? | (add insight) |
-| 3 | Which team won the most matches? | (add insight) |
+| 1 | How many matches were played in each city? | Mumbai hosted 48 of the 74 matches (65%), followed by Pune (13) and Navi Mumbai (9). Kolkata and Ahmedabad hosted 2 each, which were the playoff games. |
+| 2 | Which 5 venues hosted the most matches? | Four venues hosted 70 of 74 matches: Wankhede Stadium (21), Dr DY Patil Sports Academy (20), Brabourne Stadium (16) and the Maharashtra Cricket Association Stadium, Pune (13). Eden Gardens and Narendra Modi Stadium hosted 2 each. |
+| 3 | Which team won the most matches? | Gujarat Titans won the most matches (12), ahead of Rajasthan Royals (10). Lucknow Super Giants and Royal Challengers Bangalore tied on 9. |
 | 4 | Who won the most Player of the Match awards? | (add insight) |
 | 5 | Which 10 batters scored the most runs? | (add insight) |
 | 6 | Which 10 bowlers took the most wickets? | (add insight) |

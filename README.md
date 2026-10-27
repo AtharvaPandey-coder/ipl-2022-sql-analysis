@@ -36,6 +36,7 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 | 10 | At which venues did chasing teams win more often than teams batting first? | Only two venues favoured chasing teams. At Wankhede Stadium they won 13 of 21 matches (62%), while Narendra Modi Stadium showed 2 of 2 but on too small a sample to read much into. |
 | 11 | Which batters have the best strike rate (minimum 100 balls faced)? | KD Karthik had the best strike rate (183.33 off 180 balls), narrowly ahead of LS Livingstone (182.08), who also scored the most runs of the top ten (437). |
 | 12 | Which team scored the most total runs, and what is each team's average runs per match? | Rajasthan Royals scored the most runs in 2022 (2943 in 17 matches) and also had the highest average (173.12 per match). Lucknow Super Giants ranked below Gujarat and Bangalore on total runs but ahead of both on average (169.87), because they played fewer matches. |
+| 13 | What percentage of each team's runs came from fours and sixes? | About 62% of runs came from fours and sixes for the top four teams, led by Kolkata Knight Riders (62.35%). Chennai Super Kings were lower at 59.18%. |
 ## SQL concepts practiced
 `GROUP BY`, `COUNT`, `SUM`, `COUNT(DISTINCT)`, `CASE WHEN`, `ORDER BY`, `LIMIT`,percentage calculation.
 Coming next: JOINs, CTEs and window functions.
@@ -44,8 +45,9 @@ Coming next: JOINs, CTEs and window functions.
 - Q5 and Q6 use `COUNT(DISTINCT ID)` for matches, because `deliveries` has one row per ball.
 - Q6 counts only dismissals credited to the bowler (bowled, caught, caught and bowled, lbw, stumped, hit wicket). Run-outs and retirements are excluded.
 - Q8 and Q9 use `100.0 * SUM(CASE WHEN TossWinner = WinningTeam THEN 1 ELSE 0 END) / COUNT(*)` for the percentage. The `100.0` stops SQL from rounding down to a whole number.
-- - Q11 excludes wides from balls faced, because a wide is not a ball the batter faces. A minimum of 100 balls faced (`HAVING`) keeps tiny samples from topping the list.
-  - Q12 divides total runs by `COUNT(DISTINCT ID)` to get the average per match, because teams played different numbers of matches (14 to 17, depending on playoffs), so total runs alone is not a fair comparison.
+- Q11 excludes wides from balls faced, because a wide is not a ball the batter faces. A minimum of 100 balls faced (`HAVING`) keeps tiny samples from topping the list.
+- Q12 divides total runs by `COUNT(DISTINCT ID)` to get the average per match, because teams played different numbers of matches (14 to 17, depending on playoffs), so total runs alone is not a fair comparison.
+- Q13 counts boundary runs from `batsman_run` (fours and sixes) as a share of `total_run`. The share is slightly understated because total runs include extras. The percentage repeats the full `SUM` expressions, because an alias cannot be used inside the same `SELECT`.
 ## How to run
 1. Run `schema.sql` to create the database and the two tables.
 2. Load the Kaggle data into `matches` and `deliveries`.

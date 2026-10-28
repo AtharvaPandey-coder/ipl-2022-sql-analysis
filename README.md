@@ -51,7 +51,8 @@ Coming next:CTEs and window functions.
 - Q11 excludes wides from balls faced, because a wide is not a ball the batter faces. A minimum of 100 balls faced (`HAVING`) keeps tiny samples from topping the list.
 - Q12 divides total runs by `COUNT(DISTINCT ID)` to get the average per match, because teams played different numbers of matches (14 to 17, depending on playoffs), so total runs alone is not a fair comparison.
 - Q13 counts boundary runs from `batsman_run` (fours and sixes) as a share of `total_run`. The share is slightly understated because total runs include extras. The percentage repeats the full `SUM` expressions, because an alias cannot be used inside the same `SELECT`.
-- -- Pattern: JOIN on the shared key, put the table name in front of any column that exists in both tables, COUNT(DISTINCT d.ID) to count matches from a ball-level table
+- Q 14: JOIN on the shared key, put the table name in front of any column that exists in both tables, COUNT(DISTINCT d.ID) to count matches from a ball-level table
+  -Q 15 Pattern: top N per group = CTE for totals per (group, item), RANK() OVER (PARTITION BY group ORDER BY total DESC) in a second CTE, then WHERE rnk <= N in the final SELECT
 ## How to run
 1. Run `schema.sql` to create the database and the two tables.
 2. Load the Kaggle data into `matches` and `deliveries`.

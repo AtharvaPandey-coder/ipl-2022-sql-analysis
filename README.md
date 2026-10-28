@@ -38,8 +38,7 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 | 12 | Which team scored the most total runs, and what is each team's average runs per match? | Rajasthan Royals scored the most runs in 2022 (2943 in 17 matches) and also had the highest average (173.12 per match). Lucknow Super Giants ranked below Gujarat and Bangalore on total runs but ahead of both on average (169.87), because they played fewer matches. |
 | 13 | What percentage of each team's runs came from fours and sixes? | About 62% of runs came from fours and sixes for the top four teams, led by Kolkata Knight Riders (62.35%). Chennai Super Kings were lower at 59.18%. |
 | 14 | Total and average runs per match at each venue (join of `matches` and `deliveries`) | Brabourne Stadium was the highest-scoring venue among those with 10 or more matches (341.44 runs per match, both teams combined), and the Maharashtra Cricket Association Stadium in Pune was the lowest (316.00). Eden Gardens averaged 389.50, but only across 2 matches. |
-
-
+| 15 | Who are the top 3 run-scoring batters for each team in IPL 2022? | KL Rahul led Lucknow Super Giants with 653 runs, while JC Buttler topped Rajasthan Royals with 894 runs. HH Pandya (512) led Gujarat Titans, DA Warner (461) led Delhi Capitals, and RD Gaikwad (382) led Chennai Super Kings. The query uses SQL aggregation and the `RANK()` window function to rank batters within each team and return the top 3. |
 ## SQL concepts practiced
 `GROUP BY`, `COUNT`, `SUM`, `COUNT(DISTINCT)`, `CASE WHEN`, `ORDER BY`, `LIMIT`,percentage calculation.,JOINS,CTE
 Coming next:window functions.

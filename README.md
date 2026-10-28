@@ -41,8 +41,8 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 
 
 ## SQL concepts practiced
-`GROUP BY`, `COUNT`, `SUM`, `COUNT(DISTINCT)`, `CASE WHEN`, `ORDER BY`, `LIMIT`,percentage calculation.,JOINS
-Coming next:CTEs and window functions.
+`GROUP BY`, `COUNT`, `SUM`, `COUNT(DISTINCT)`, `CASE WHEN`, `ORDER BY`, `LIMIT`,percentage calculation.,JOINS,CTE
+Coming next:window functions.
 
 ## Notes
 - Q5 and Q6 use `COUNT(DISTINCT ID)` for matches, because `deliveries` has one row per ball.

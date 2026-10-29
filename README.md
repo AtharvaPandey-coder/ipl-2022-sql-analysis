@@ -39,9 +39,9 @@ VALUES ('1312200', 'Ahmedabad', '2022-05-29', '2022', ...);
 | 13 | What percentage of each team's runs came from fours and sixes? | About 62% of runs came from fours and sixes for the top four teams, led by Kolkata Knight Riders (62.35%). Chennai Super Kings were lower at 59.18%. |
 | 14 | Total and average runs per match at each venue (join of `matches` and `deliveries`) | Brabourne Stadium was the highest-scoring venue among those with 10 or more matches (341.44 runs per match, both teams combined), and the Maharashtra Cricket Association Stadium in Pune was the lowest (316.00). Eden Gardens averaged 389.50, but only across 2 matches. |
 | 15 | Who are the top 3 run-scoring batters for each team in IPL 2022? | KL Rahul led Lucknow Super Giants with 653 runs, while JC Buttler topped Rajasthan Royals with 894 runs. HH Pandya (512) led Gujarat Titans, DA Warner (461) led Delhi Capitals, and RD Gaikwad (382) led Chennai Super Kings. The query uses SQL aggregation and the `RANK()` window function to rank batters within each team and return the top 3. |
+| 16 | In each match, find the top run scorer. How often was that player also Player of the Match? | Out of 74 matches counted by the query, the top run scorer was also named Player of the Match in 32 matches, representing 43.24%. The query uses SQL aggregation to calculate each batter's runs per match, the `RANK()` window function to identify the top scorer(s), and a `JOIN` with `matches` to compare the top scorer against `Player_of_Match`. `CASE WHEN` and `COUNT(DISTINCT)` calculate the number and percentage of matching matches. |
 ## SQL concepts practiced
 `GROUP BY`, `COUNT`, `SUM`, `COUNT(DISTINCT)`, `CASE WHEN`, `ORDER BY`, `LIMIT`,percentage calculation.,JOINS,CTE
-Coming next:window functions.
 
 ## Notes
 - Q5 and Q6 use `COUNT(DISTINCT ID)` for matches, because `deliveries` has one row per ball.
